@@ -3,9 +3,9 @@ public class Hero {
     private int Damage;
     private int superFly;
 
-    public Hero(int health, int damage){
-        Health = health;
-        Damage = damage;
+    public Hero(String Naruto, int health, int damage, int i){
+            Health = health;
+            Damage = damage;
     }
 
     public int getHealth(){

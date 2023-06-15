@@ -17,9 +17,9 @@ public class Main {
 
     public static Hero[] createHeroes(){
         Hero[] allHeroes = new Hero[3]; //
-        allHeroes[0] = new Hero(350, 80, 150);
-        allHeroes[1] = new Hero(250, 50, 0);
-        allHeroes[2] = new Hero(270, 70, 120);
+        allHeroes[0] = new Hero("Naruto", 350, 80, 150);
+        allHeroes[1] = new Hero("Sakura", 250, 50, 0);
+        allHeroes[2] = new Hero("Saske", 270, 70, 120);
         return allHeroes;
     }
 }
