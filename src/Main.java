@@ -7,8 +7,19 @@ public class Main {
         System.out.println(Pain.getHealth());
         Pain.setBossDefencetype("Physical");
         System.out.println(Pain.getBossDefencetype());
-        Hero Naruto = new Hero(350, 80, 150);
-        Hero Sakura = new Hero(250, 50, 0);
-        Hero Saske = new Hero(270, 70, 120);
+        Hero[] heroes = createHeroes();
+        for (int i = 0; i < heroes.length; i++) {
+            System.out.println( "Суперспособность: " + heroes[i].getSuperFly());
+            System.out.println( "Урон: " + heroes[i].getDamage());
+            System.out.println( "Здоровье: " + heroes[i].getHealth());
+        }
+    }
+
+    public static Hero[] createHeroes(){
+        Hero[] allHeroes = new Hero[3]; //
+        allHeroes[0] = new Hero(350, 80, 150);
+        allHeroes[1] = new Hero(250, 50, 0);
+        allHeroes[2] = new Hero(270, 70, 120);
+        return allHeroes;
     }
 }
